@@ -8,7 +8,7 @@
 		<!--  lookup parent from repository  -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>file-service</artifactId>
+	<artifactId>plagiarism-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>file-service</name>
 	<description>Demo project for Spring Boot</description>

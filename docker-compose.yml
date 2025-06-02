@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  file-service:
+    build: ./file-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - plagiarism-service
+
+  plagiarism-service:
+    build: ./plagiarism-service
+    ports:
+      - "8081:8081"
