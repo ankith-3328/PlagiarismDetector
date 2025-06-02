@@ -15,7 +15,7 @@ public class PlagiarismController {
 
     @PostMapping("/check")
     public ResponseEntity<Double> checkPlagiarism(@RequestBody PlagiarismRequestDTO plagiarismRequestDTO){
-        double similarity = plagiarismService.compareTexts(plagiarismRequestDTO.getContent1(),
+        double similarity = plagiarismService.calculate(plagiarismRequestDTO.getContent1(),
                             plagiarismRequestDTO.getContent2());
 
         return ResponseEntity.ok(similarity);
